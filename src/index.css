@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-darker-grotesque: var(--f-darker-grotesque);
+  --font-space-grotesk: var(--f-space-grotesk);
+  --color-gray-dpv: #212121;
+  --color-gray-dpv-2: #8E8E8E;
+  --color-gray-dpv-3: #898989;
+  --color-gray-dpv-4: #FAFAFA;
+  --color-gray-dpv-5: #888A92;
+  --color-gray-dpv-6: #D4D4D4;
+  --color-gray-dpv-7: #D9D9D9;
+  --color-gray-dpv-8: #999999;
+  --color-blue-dpv: #418AF9;
+  --color-blue-dpv-2: #EDF5FF;
+  --color-blue-dpv-3: #42E8E0;
+  --color-blue-dpv-4: #093B8D;
+  --color-blue-dpv-5: #02173A;
+  --color-purple-dpv: #3530A8;
+  --color-white-dpv: #EBEBEB;
+  --color-white-dpv-2: #F6F6F6;
+  --color-green-dpv: #00E17B;
+  --color-green-dpv-2: #00DECA;
+  --color-black-dpv: #1D213B;
+  --breakpoint-3xl: 108rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.resource-content {
+  @apply font-darker-grotesque;
+}
+
+.resource-content blockquote,
+.resource-content dl,
+.resource-content dd,
+.resource-content hr,
+.resource-content figure,
+.resource-content p {
+  margin: revert;
+}
+
+.resource-content pre {
+  margin: revert;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.resource-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+.resource-content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.75em 0;
+}
+
+.resource-content h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+.resource-content h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1.12em 0;
+}
+
+.resource-content h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+
+.resource-content h6 {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+.resource-content ol,
+.resource-content ul {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}

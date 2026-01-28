@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "build": "echo \"no build step\"",
+    "start": "node server.js"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -23,3 +21,4 @@
     "tailwindcss": "^4"
   }
 }
+

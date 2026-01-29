@@ -59,5 +59,6 @@ export const getAssetUrl = (path) => {
   const cleanPath = path.replace(/^\//, "");
   
   return `${cleanHost}/${cleanPath}`;
-};
+}
+
 

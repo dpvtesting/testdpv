@@ -42,3 +42,22 @@ export const fetchContents = async models => {
   }
 
 }
+
+/**
+ * Helper to turn a relative Cockpit path into a full URL
+ */
+export const getAssetUrl = (path) => {
+  if (!path) return "";
+  
+  // If the path is already a full URL, just return it
+  if (path.startsWith('http')) return path;
+
+  const host = process.env.NEXT_PUBLIC_ADMIN_HOST || 'https://admin.digitalplace.ai';
+  
+  // Clean up slashes to avoid "domain.com//storage"
+  const cleanHost = host.replace(/\/$/, "");
+  const cleanPath = path.replace(/^\//, "");
+  
+  return `${cleanHost}/${cleanPath}`;
+};
+

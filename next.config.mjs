@@ -1,12 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [new URL('https://admindpv.newman.id/storage/uploads/**')],
-    unoptimized: true
-    protocol: 'https',
-    hostname: 'admin.digitalplace.ai',
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'admindpv.newman.id',
+        pathname: '/storage/uploads/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'admin.digitalplace.ai',
+        pathname: '/**',
+      }
+    ],
   },
 };
 
 export default nextConfig;
-

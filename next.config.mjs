@@ -11,10 +11,11 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'admin.digitalplace.ai',
-        pathname: '/**',
+        pathname: '/storage/uploads/**',
       }
     ],
   },
 };
 
 export default nextConfig;
+

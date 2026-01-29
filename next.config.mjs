@@ -4,13 +4,14 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [
       
-        new URL('https://admindpv.newman.id/storage/uploads/**')
+        new URL('https://admin.digitalplace.ai/storage/uploads/**')
       
     ],
   },
 };
 
 export default nextConfig;
+
 
 
 

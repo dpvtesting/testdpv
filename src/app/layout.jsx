@@ -6,6 +6,7 @@ import { ReactLenis } from 'lenis/dist/lenis-react'
 import { Suspense } from 'react'
 import { fetchContents } from '@/util'
 import { MenuProvider } from '@/context/menu'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import '@/index.css'
 
@@ -69,6 +70,7 @@ const Layout = async ({ children }) => {
             </MenuProvider>
           </Suspense>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   )

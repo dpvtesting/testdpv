@@ -3,15 +3,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'admin.digitalplace.ai',
-        pathname: '/storage/uploads/**',
-      }
+      
+        new URL('https://admin.digitalplace.ai/storage/uploads/**')
+      
     ],
   },
 };
 
 export default nextConfig;
+
 
 

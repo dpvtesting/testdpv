@@ -10,7 +10,7 @@ export const fetchContent = async (model, param = {}) => {
     const qs = Object.entries(param).reduce((acc, [key, value]) => {
       return acc += `${key}=${JSON.stringify(value)}`
     }, '')
-    const res = await fetch(process.env.NEXT_PUBLIC_ADMIN_HOST + '/api/content/item/' + model + '?' + qs, {
+    const res = await fetch(process.env.NEXT_PUBLIC_COCKPIT_URL + '/api/content/item/' + model + '?' + qs, {
       cache: 'no-store'
     })
     return await res.json()
@@ -33,11 +33,12 @@ export const fetchContents = async models => {
         [curr.key]: curr.param || {}
       }
     }, {}))
-    const res = await fetch(process.env.NEXT_PUBLIC_ADMIN_HOST + '/api/content/items?models='+qs, {
+    const res = await fetch(process.env.NEXT_PUBLIC_COCKPIT_URL + '/api/content/items?models='+qs, {
       cache: 'no-store'
     })
     return await res.json()
   } catch(err) {
     return {}
   }
+
 }

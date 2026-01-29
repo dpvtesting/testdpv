@@ -5,11 +5,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'admindpv.newman.id',
-        pathname: '/storage/uploads/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'admin.digitalplace.ai',
         pathname: '/storage/uploads/**',
       }
@@ -18,4 +13,5 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
 

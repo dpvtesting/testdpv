@@ -7,6 +7,7 @@ import { Suspense } from 'react'
 import { fetchContents } from '@/util'
 import { MenuProvider } from '@/context/menu'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import '@/index.css'
 
@@ -71,6 +72,7 @@ const Layout = async ({ children }) => {
           </Suspense>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

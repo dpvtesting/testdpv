@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Button from "@/components/Button"
 import arrowRight from '@/assets/arrow-right.png'
 import routeConstant from '@/constant/route'
@@ -232,4 +231,5 @@ export default async function Home() {
     </>
   )
 }
+
 

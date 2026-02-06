@@ -70,6 +70,7 @@ const Layout = async ({ children }) => {
             </MenuProvider>
           </Suspense>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   )

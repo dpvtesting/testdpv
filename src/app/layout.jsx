@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Darker_Grotesque, Space_Grotesk } from 'next/font/google'
 import Header from '@/components/Header'
 import MobileHeader from '@/components/MobileHeader'
@@ -75,3 +76,4 @@ const Layout = async ({ children }) => {
 }
 
 export default Layout
+
